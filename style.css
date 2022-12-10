@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500;700&display=swap'); 
+
+* {
+    transition: all .2s linear;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(black 1px, transparent 0);
+    background-size: 40px 40px;
+}
+
+.login-form {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.login-form h2 {
+    font-weight: 500;
+    border-left: 15px solid var(--accent);
+    line-height: 1em;
+    padding-left: 10px;
+    color: #333;
+}
+
+.login-form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 3px 10px;
+    outline: none;
+    font-size: 1.1em;
+    border: 0px;
+}
+
+.login-form .inputBox input#btn-login {
+    border: none;
+    background: var(--accent);
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 3px;
+}
+
+.login-form .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form .group a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-form .group a:nth-child(2) {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.login-form .inputBox img {
+    height: 30px;
+    width: 41px;
+    display: flex;
+    padding-right: 10px;
+    border-right: 1.5px solid rgba(3, 3, 3, .4);
+}
+
+.login-form .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: 2px solid #555;
+    font-size: 1em;
+    color: #333;
+    border-radius: 3px;
+}
+
+.colors {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px 0 0 5px;
+}
+
+.colors span, .colors input {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 5px 0;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colors span.active {
+    border: 1px solid #333;
+    scale: 1.2;
+}
+
+.colors img {
+    height: 13px;
+    width: 13px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.colors input#btn-color {
+    opacity: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}

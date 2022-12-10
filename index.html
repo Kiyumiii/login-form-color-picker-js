@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changement de couleur</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./JavaScript/colors.js" defer></script>
+</head>
+<body>
+    <div class="login-form">
+        <h2 id="login">Login</h2>
+        <div class="inputBox inputs">
+            <label for="username"><img src="./images/user-icon.png"></label>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <div class="inputBox inputs">
+            <label for="password"><img src="./images/password-icon.png"></label>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Login" id="btn-login">
+        </div>
+        <div class="group">
+            <a href="#">Forget Password</a>
+            <a href="#">Signup</a>
+        </div>
+    </div>
+    <div class="colors">
+        <span class="color-picker" data-color="#C1E1C1"></span>
+        <span class="color-picker" data-color="#ffb7c5"></span>
+        <span class="color-picker" data-color="#FAC898"></span>
+        <span class="color-picker" data-color="RANDOM">
+            <img src="./images/random-icon.png"></img>
+        </span>
+        <span class="color-picker" data-color="CUSTOM">
+            <img src="./images/eyedropper-icon.png"></img>
+            <input id="btn-color" type="color"></input>
+        </span>
+        <span class="color-picker" id="btn-copy" data-color="COPY">
+            <img src="./images/copy-icon.png">
+        </span>
+    </div>
+</body>
+</html>
