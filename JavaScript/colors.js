@@ -105,6 +105,7 @@ function getContrastYIQ(hexColor){
 	let g = parseInt(hexColorInput.substr(2,2),16);
 	let b = parseInt(hexColorInput.substr(4,2),16);
 	let yiq = ((r*299)+(g*587)+(b*114))/1000;
+    document.querySelector("meta[name=\"theme-color\"]").setAttribute("content", hexColor)
 	return (yiq >= 128) ? '#333' : 'white';
 }
 
